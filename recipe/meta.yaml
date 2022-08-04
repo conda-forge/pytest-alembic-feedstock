@@ -1,5 +1,5 @@
 {% set name = "pytest-alembic" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-alembic-{{ version }}.tar.gz
-  sha256: 8cc58337fdf8d93be4bbba843afce612fda76f7ff4efa55baf3efca24cdd7214
+  sha256: 8f24b9c0caa350ce7b34eb0bd728f0e44b1db605c8b5b159531805dec5ba6640
 
 build:
   number: 0
