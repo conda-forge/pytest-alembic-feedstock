@@ -1,5 +1,5 @@
 {% set name = "pytest-alembic" %}
-{% set version = "0.10.4" %}
+{% set version = "0.10.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 368f2b28caaa791a9788fdebebe973406a34b33162e8614b7596147e524711f7
+  sha256: 69f96a6e1cd3217e46e4df9f797e08e17a162c4a071e027bef43ebab961e7a53
 
 build:
   number: 0
