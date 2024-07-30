@@ -21,8 +21,7 @@ requirements:
     - poetry >=0.12
   run:
     - alembic
-    - dataclasses
-    - pytest >=1.0
+    - pytest >=6.0
     - python >=3.6
     - sqlalchemy
 
