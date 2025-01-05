@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: a920d8770b5be77326c5c1b2bd8d4d4a0dd8fc2c2d57abbcd1fec28a21131b85
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - poetry >=0.12
   run:
     - alembic
     - pytest >=6.0
-    - python >=3.6
+    - python >={{ python_min }}
     - sqlalchemy
 
 test:
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/schireson/pytest-alembic
