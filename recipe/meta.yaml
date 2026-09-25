@@ -1,13 +1,13 @@
 {% set name = "pytest-alembic" %}
-{% set version = "0.12.1" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 4e2b477d93464d0cfe80487fdf63922bfd22f29153ca980c1bccf1dbf833cf12
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 268ff312e14d9f9c835d0676f22fba36088e877097f7ec89a568d5ae92a5b5f4
 
 build:
   number: 0
