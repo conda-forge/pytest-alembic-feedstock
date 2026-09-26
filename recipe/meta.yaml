@@ -32,6 +32,8 @@ test:
   commands:
     - pip check
   requires:
+    # Required by sqlalchemy for testing.
+    - greenlet
     - pip
     - python {{ python_min }}
 
