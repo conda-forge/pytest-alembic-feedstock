@@ -1,5 +1,5 @@
 {% set name = "pytest-alembic" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 268ff312e14d9f9c835d0676f22fba36088e877097f7ec89a568d5ae92a5b5f4
+  sha256: 96a54ec76d4704fffb433880c5a84f5c3ea5980bb3f6509d868fef40e6e9a79f
 
 build:
   number: 0
